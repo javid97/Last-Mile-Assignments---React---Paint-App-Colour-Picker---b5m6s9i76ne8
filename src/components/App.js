@@ -31,8 +31,7 @@ const App = () => {
 
   return (
     <div id="master">
-      <h5 className="heading">{/* display title here */}</h5>
-
+      <h5 className="heading">{title}</h5>
       <div className="row">
         {colourConfig.map((config, index) => (
           <ColourSelector key={config.key} config={config} selectNextBackground={selectNextBackground} />
@@ -43,7 +42,7 @@ const App = () => {
         {
           ["selection1", "selection2", "selection3"].map(key => (
             <Selection key={key} applyColor={applyColor} />
-          ))
+        ))
         }
       </div>
     </div >
